@@ -1,0 +1,24 @@
+/*******ES EDITABLE EN ANDROID CON LA APLICACIÓN SIMPLE TEXT EDITOR *****/
+/* Dr. Jorge Chávez Carlos */
+print("El modelo de Lorenz se esta resolviendo...")$
+/* Aqui se definen valores en parámetros*/
+a:10$
+b:28$ 
+c:8/3$
+/* Tiempos de paso e Integración */
+dt:0.01$
+T:70$
+/* Definiendo condiciones iniciales */
+x0: 1$
+y0: 0$
+z0: 0$
+print("La condicion inicial es: x0= ",x0, ", y0= ",y0,", z0= ", z0)$
+/* ECUACIONES DINÁMICAS */
+dinam:[ a*(y-x), x*(b-z)-y , x*y-c*z]$
+CI:[x0, y0, z0]$
+solvar: rk([dinam[1],dinam[2],dinam[3]], [x,y,z], CI , [t,0,T,dt])$
+tf:round(T/dt) $
+datos: map(lambda([x],rest(x)),solvar)$
+data: makelist([datos[i][1],datos[i][3]], i, 1, tf)$
+print("La solucion se ha encontrado")$
+plot2d ([discrete, data], [point_type,diamond], [color,blue],[xlabel, "X"],[ylabel, "Z"])$
