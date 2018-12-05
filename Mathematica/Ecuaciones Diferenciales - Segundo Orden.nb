@@ -1,0 +1,165 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      4844,        156]
+NotebookOptionsPosition[      3938,        122]
+NotebookOutlinePosition[      4456,        142]
+CellTagsIndexPosition[      4413,        139]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["ECUACIONES DIFERENCIALES", "Title",
+ CellChangeTimes->{{3.60021272271875*^9, 3.600212753859375*^9}}],
+
+Cell["\<\
+ECUACIONES DIFERENCIALES LINEALES DE SEGUNDO ORDEN CON COEFICIENTES \
+CONSTANTES:\
+\>", "Subtitle",
+ CellChangeTimes->{{3.572390583125*^9, 3.572390624203125*^9}, 
+   3.574366286578125*^9, {3.605659569017032*^9, 3.605659586326779*^9}, {
+   3.605660752382656*^9, 3.60566076124205*^9}, {3.605875071861596*^9, 
+   3.605875078197497*^9}}],
+
+Cell["M. en C. Jorge Ch\[AAcute]vez Carlos", "Author",
+ CellChangeTimes->{{3.572390633421875*^9, 3.572390659109375*^9}, {
+  3.62134298913363*^9, 3.6213429944023476`*^9}},
+ TextAlignment->Center],
+
+Cell[CellGroupData[{
+
+Cell["", "Section"],
+
+Cell["\<\
+Dada una ecuaci\[OAcute]n de segundo orden con coeficientes constates de la \
+forma : \
+\>", "Text",
+ CellChangeTimes->{{3.574365655640625*^9, 3.574365658234375*^9}, {
+   3.57436569434375*^9, 3.57436571425*^9}, 3.57436627871875*^9, {
+   3.605659854616601*^9, 3.605659865902724*^9}, 3.605660693224819*^9, {
+   3.60566135274757*^9, 3.605661352878085*^9}}],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"a", " ", 
+     RowBox[{"y", "''"}]}], "+", 
+    RowBox[{"b", " ", 
+     RowBox[{"y", "'"}]}], "+", 
+    RowBox[{"c", " ", "y"}]}], "=", "0"}], 
+  TraditionalForm]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.605659892858943*^9, 3.605659907252083*^9}, {
+  3.605661307684076*^9, 3.605661307870551*^9}},
+ TextAlignment->Center],
+
+Cell["\<\
+la funci\[OAcute]n y(t) puede ser encontrada  definiendo los coeficientes:\
+\>", "Text",
+ CellChangeTimes->{
+  3.605659942869231*^9, 3.605660707505268*^9, {3.605661362579987*^9, 
+   3.605661394408022*^9}, {3.605875110505733*^9, 3.605875113143138*^9}, {
+   3.605875161794986*^9, 3.605875169035698*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", "=", "5"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"c", "=", "6"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.6056605868378*^9, 3.605660589249726*^9}, {
+  3.605660715545076*^9, 3.605660720126016*^9}, {3.605660769331622*^9, 
+  3.605660781026951*^9}, {3.605661172245731*^9, 3.605661174677057*^9}, {
+  3.605905810828125*^9, 3.6059058705625*^9}, {3.60590595353125*^9, 
+  3.60590595715625*^9}, {3.6213429674972725`*^9, 3.621342968702127*^9}},
+ FontColor->GrayLevel[0],
+ Background->RGBColor[0.87, 0.94, 1]],
+
+Cell["\<\
+Una vez definidos los coeficientes basta ejecutar la siguiente instrucci\
+\[OAcute]n :\
+\>", "Text",
+ CellChangeTimes->{{3.605661420103144*^9, 3.605661451873131*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["EJEMPLO:", "Section",
+ CellChangeTimes->{{3.605661456571716*^9, 3.605661478092295*^9}}],
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"a", " ", 
+      RowBox[{
+       RowBox[{"y", "''"}], "[", "t", "]"}]}], "+", 
+     RowBox[{"b", " ", 
+      RowBox[{
+       RowBox[{"y", "'"}], "[", "t", "]"}]}], "+", 
+     RowBox[{"c", " ", 
+      RowBox[{"y", "[", "t", "]"}]}]}], "==", "0"}], ",", 
+   RowBox[{"y", "[", "t", "]"}], ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.605660317712678*^9, 3.605660379818713*^9}, {
+  3.605660439339083*^9, 3.605660479163581*^9}, {3.605660547664609*^9, 
+  3.605660548166993*^9}, {3.60566118100896*^9, 3.605661189708603*^9}},
+ Background->RGBColor[0.87, 0.94, 1]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowToolbars->"EditBar",
+WindowSize->{715, 453},
+WindowMargins->{{38, Automatic}, {Automatic, -31}},
+PrintingCopies->1,
+PrintingPageRange->{Automatic, Automatic},
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb",
+PrivateNotebookOptions -> {
+ "VersionedStylesheet" -> {"Default.nb"[8.] -> False}}
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 106, 1, 83, "Title"],
+Cell[688, 25, 343, 7, 77, "Subtitle"],
+Cell[1034, 34, 194, 3, 23, "Author"],
+Cell[CellGroupData[{
+Cell[1253, 41, 19, 0, 71, "Section"],
+Cell[1275, 43, 363, 7, 29, "Text"],
+Cell[1641, 52, 389, 12, 23, "DisplayFormulaNumbered"],
+Cell[2033, 66, 311, 6, 29, "Text"],
+Cell[2347, 74, 602, 13, 88, "Input"],
+Cell[2952, 89, 176, 4, 29, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3165, 98, 93, 1, 71, "Section"],
+Cell[3261, 101, 649, 17, 47, "Input"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

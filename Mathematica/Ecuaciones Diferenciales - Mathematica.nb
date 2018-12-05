@@ -1,0 +1,363 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     11266,        354]
+NotebookOptionsPosition[      9836,        300]
+NotebookOutlinePosition[     10206,        316]
+CellTagsIndexPosition[     10163,        313]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["ECUACIONES DIFERENCIALES", "Title",
+ CellChangeTimes->{{3.60021312890625*^9, 3.600213166828125*^9}}],
+
+Cell["ECUACIONES DIFERENCIALES CON MATHEMATICA:", "Subtitle",
+ CellChangeTimes->{
+  3.60021317375*^9, {3.600213233453125*^9, 3.600213250015625*^9}, {
+   3.6013856768207874`*^9, 3.6013856803517437`*^9}, {3.602108356187412*^9, 
+   3.602108357162534*^9}}],
+
+Cell["Fis. Jorge Ch\[AAcute]vez Carlos", "Author",
+ CellChangeTimes->{{3.60021435634375*^9, 3.60021435634375*^9}}],
+
+Cell["", "Institution"],
+
+Cell["\<\
+Con mathematica es posible calcular la soluci\[OAcute]n de ecuaciones \
+diferenciales usando un comando muy sencillo de usar dado por:\
+\>", "Abstract"],
+
+Cell[BoxData[
+ RowBox[{
+  ButtonBox["DSolve",
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/DSolve"], "[", 
+  RowBox[{
+   StyleBox["eqn", "TI"], ",", 
+   StyleBox["y", "TI"], ",", 
+   StyleBox["x", "TI"]}], "]"}]], "AbstractMath",
+ CellChangeTimes->{3.60021414434375*^9},
+ TextAlignment->Center,
+ Background->RGBColor[0.87, 0.94, 1]],
+
+Cell[TextData[{
+ "resuelve una ecuaci\[OAcute]n diferencial para una funci\[OAcute]n ",
+ Cell[BoxData[
+  StyleBox["y", "TI"]], "InlineFormula"],
+ ", con variable independiente ",
+ Cell[BoxData[
+  StyleBox["x", "TI"]], "InlineFormula"],
+ ". "
+}], "Abstract",
+ CellChangeTimes->{{3.60021425790625*^9, 3.6002143133125*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 1:", "Section",
+ CellChangeTimes->{
+  3.60021434578125*^9, {3.6002143839375*^9, 3.60021438409375*^9}, {
+   3.6002145820625*^9, 3.600214582171875*^9}, {3.601165611075853*^9, 
+   3.601165611204515*^9}},
+ TextAlignment->Left],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"x", " ", 
+      RowBox[{
+       RowBox[{"y", "'"}], "[", "x", "]"}]}], " ", "+", " ", 
+     RowBox[{"2", 
+      RowBox[{"y", "[", "x", "]"}]}]}], " ", "==", " ", 
+    RowBox[{"4", " ", 
+     SuperscriptBox["x", "2"]}]}], ",", " ", 
+   RowBox[{"y", "[", "x", "]"}], ",", " ", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.60021405859375*^9, 3.600214067609375*^9}, {
+  3.601165480828937*^9, 3.601165519861976*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"y", "[", "x", "]"}], "\[Rule]", 
+    RowBox[{
+     SuperscriptBox["x", "2"], "+", 
+     FractionBox[
+      RowBox[{"C", "[", "1", "]"}], 
+      SuperscriptBox["x", "2"]]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.601165736007314*^9, 3.601166313507965*^9, 
+  3.602108410809635*^9, 3.618926705059507*^9}]
+}, Open  ]],
+
+Cell["C[1] se refiere a Constante1", "Text",
+ CellChangeTimes->{{3.601165954641956*^9, 3.601165974869638*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 2:", "Section",
+ CellChangeTimes->{{3.6002145210625*^9, 3.60021452115625*^9}, {
+  3.600214576078125*^9, 3.60021457621875*^9}, {3.601165621040554*^9, 
+  3.601165621233197*^9}},
+ TextAlignment->Left],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"n", "'"}], "[", "x", "]"}], " ", "\[Equal]", 
+    RowBox[{"0.2", " ", 
+     RowBox[{"n", "[", "x", "]"}]}]}], " ", ",", " ", 
+   RowBox[{"n", "[", "x", "]"}], ",", " ", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.60021452725*^9, 3.600214554703125*^9}, {
+  3.600214737953125*^9, 3.600214742390625*^9}, {3.60021498940625*^9, 
+  3.600214991359375*^9}, {3.600215023984375*^9, 3.600215050765625*^9}, {
+  3.60116564084683*^9, 3.601165655351745*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"n", "[", "x", "]"}], "\[Rule]", 
+    RowBox[{
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"0.2`", " ", "x"}]], " ", 
+     RowBox[{"C", "[", "1", "]"}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.6002150159375*^9, 3.600215051484375*^9}, 
+   3.601165149802909*^9, 3.601165657064087*^9, 3.601166317505807*^9, 
+   3.60210841536636*^9, 3.618926710629465*^9}]
+}, Open  ]],
+
+Cell["\<\
+Si se tiene una condici\[OAcute]n inicial por ejemplo n(0) = 3\
+\>", "Text",
+ CellChangeTimes->{{3.601165275232775*^9, 3.601165341716095*^9}, {
+  3.601165662988144*^9, 3.601165663960224*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"n", "'"}], "[", "x", "]"}], "\[Equal]", 
+      RowBox[{"0.2", 
+       RowBox[{"n", "[", "x", "]"}]}]}], ",", 
+     RowBox[{
+      RowBox[{"n", "[", "0", "]"}], "\[Equal]", "3"}]}], "}"}], ",", 
+   RowBox[{"n", "[", "x", "]"}], ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.601165323592215*^9, 3.60116533972127*^9}, {
+  3.60116567128349*^9, 3.601165689068462*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"n", "[", "x", "]"}], "\[Rule]", 
+    RowBox[{"3.`", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"0.2`", " ", "x"}]]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.601165327558629*^9, 3.601165344475767*^9}, 
+   3.601165690140224*^9, 3.601165896302622*^9, 3.601166321427147*^9, 
+   3.602108421971167*^9}]
+}, Open  ]],
+
+Cell["\<\
+Si uno quiere graficar la soluci\[OAcute]n particular se escribe :\
+\>", "Text",
+ CellChangeTimes->{{3.601165412836373*^9, 3.601165445700391*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"n", "[", "x", "]"}], "/.", "%"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", 
+     RowBox[{"-", "1"}], ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.601165694156306*^9, 3.601165694656018*^9}, {
+   3.601165843528117*^9, 3.601165891422857*^9}, 3.601166332220833*^9}],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {}, 
+   {Hue[0.67, 0.6, 0.6], LineBox[CompressedData["
+1:eJwVjHk01AkAx41xjCvmQI4M83MlivSbhMzXWcjakrIMi4jSW0mXTYjpdmyk
+ImV3a1V6DM12zVvvZ2wWMfvWRhtay+hQaFSzOSrW/vF9n/f54/O1SUzflKyu
+pqYWtrD/mRPz7fH5eSUlG41dsb6GjmcDrbuEz5TUH7XZcXU36AgVMjfdb1dS
+lFsnwa6jY3HsdcvMM0oqMv7rjCEJHY1xjxtf8JRU2KyXRb5soU9Y+VQe+Iby
+ulXaPPyUjuDU165Vp8epnIfaOmyOBjj7ovs9TF9Rj9OLo/1FGihj+R6vrRim
+ZjTOfprL1cQXvvKhWH4v5VykLJvYp4WkgpbPZ+eaqA6VVagkQxt2/xy6eyq/
+SSC1P8AILWHAT9zAa/XrFegXWT9n1ehgr1ia4eWgEKTWtTkvU+ji3PNJvX9P
+vhIkLb3hucFBH6XGKpWcPylgrQ5dnppkgKT943zN9+8Ffz7s6TToWoTxuFZz
+SfqU4ERunaTG2AgX+SdiuvtnBV1mxV07OowQ2bUuPeK7OYElS6wRVc6EQpXJ
+sqfT8GWDT1eUkIXvE1u2bB5Rx4UUlYm6Dxtv2452SKUaYKQGmXPsOViSsaZI
+uEcLeUEmRtEMY4RnpXm6hjNwpzeLTtMxgbC1yEOgr4uoVWHx5XRTfLN7uXXe
+Gz3wtmlnibmLwWEH8GfaDDAaciZi0t8M5TPBl+qOGCLg/CNL3QRzFHNffghu
+MIJH+nXv2KsW8En6oa2/hInpyhdwH7LEPdtzYu00FoR90ZUFhBVuc0IK5VFs
+3HWoHgws5aLafj+zkc9BjljZYpVtDf3UhNMuDsbIF5WkMNfZwN/uuGUQ2wRG
+efrJclMeUjTstmQrTVA/6PRSOMLDIna+KHTQFJW3tQzWPiRwxX9rjEfTYjyP
+OMq4ddMWtMntwbLzZugeE8n2lNpB0Uk6j4jMUTTtEep9wR6NHdl3eYkWcJk4
+WFh73gHqU/mrP260hNI0c03EfUf4BtHi37otwSnH/rzNPUsRwpRWFxhYoZ0g
+DzE/OOGx3sqe+o9WWBSjrnXPxxnhjrzGqT4uosUbx4tyXWAnTZXtSrZGXZCL
+RcTYcjAu/3375oA1bmXqjzW7ukJRWpwzE2wD2w5Bos9LVxzmVsvKZDYQV+2I
+J++4wbBp7Im3Gw91kfenovNW4tiF3o+SyzwUVRlaBoW7g9LjVhwwJvDrRH8Z
+zXMV3pRc1Q0REXgnT8425pIIfBqj8DhGYNsozXAZQaLKkS11OEGg721Xmq8D
+iRDZkR2ahQSY3oWi3StIXHsX195cRsBq7TT/iYBEfKTZsdVXCFSEj8jk8SQe
+mRfT7FoIeIvzRJuukHBKCexjPyAgocJuHLlGIl/yqUH9NwIz57wuNd4k4boh
+LX6og0DGX2bv2T+TKDy8nrrYTWBWLSBG8YBE0JD6YdYwgfJDBah5QeKSs3Qz
+bWTB/VbtVLwmoTqY4Tz5jAA2nErmKkn8yBwakI8SuLO1vfviFIl5vybPk5ME
+dm79LLrM4GNLyV7WwXcE3DWDMazPR/3AstfbVQRYvNzfbZl8CPdWVgRME/il
+Jyyp3owPSfPGDPdZAhYcj12qJXzoGugE8z4t/Bs3rPPi8ZHwVbM1c44Ap2Xw
+Q749H/d+OjA9P0+gVmciq9OJj/8AWKYPBQ==
+     "]]}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->True,
+  AxesOrigin->{0, 3.},
+  PlotRange->{{-1, 10}, {2.456192369511968, 22.167167301531357`}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{
+    Scaled[0.02], 
+    Scaled[0.02]}]], "Output",
+ CellChangeTimes->{{3.601165892969058*^9, 3.601165899757816*^9}, 
+   3.60116633440312*^9, 3.602108426111654*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo 3:", "Section",
+ CellChangeTimes->{{3.6002145210625*^9, 3.60021452115625*^9}, {
+  3.600214589734375*^9, 3.600214589859375*^9}},
+ TextAlignment->Left],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"y", "'"}], "[", "x", "]"}], " ", "+", 
+     RowBox[{"x", " ", 
+      RowBox[{"y", "[", "x", "]"}]}]}], " ", "\[Equal]", "3"}], " ", ",", " ", 
+   RowBox[{"y", "[", "x", "]"}], ",", " ", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.60021452725*^9, 3.600214554703125*^9}, {
+  3.600214592671875*^9, 3.6002146089375*^9}, {3.6002151123125*^9, 
+  3.60021512328125*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"y", "[", "x", "]"}], "\[Rule]", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"-", 
+        FractionBox[
+         SuperscriptBox["x", "2"], "2"]}]], " ", 
+      RowBox[{"C", "[", "1", "]"}]}], "+", 
+     RowBox[{"3", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"-", 
+        FractionBox[
+         SuperscriptBox["x", "2"], "2"]}]], " ", 
+      SqrtBox[
+       FractionBox["\[Pi]", "2"]], " ", 
+      RowBox[{"Erfi", "[", 
+       FractionBox["x", 
+        SqrtBox["2"]], "]"}]}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.60021455621875*^9, 3.600214609515625*^9, 
+  3.600214855015625*^9, 3.60021512390625*^9, 3.601166340945521*^9, 
+  3.60210843045033*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowToolbars->"EditBar",
+WindowSize->{715, 432},
+WindowMargins->{{10, Automatic}, {Automatic, 0}},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 106, 1, 83, "Title"],
+Cell[688, 25, 252, 4, 49, "Subtitle"],
+Cell[943, 31, 114, 1, 23, "Author"],
+Cell[1060, 34, 23, 0, 23, "Institution"],
+Cell[1086, 36, 162, 3, 23, "Abstract"],
+Cell[1251, 41, 336, 11, 39, "AbstractMath"],
+Cell[1590, 54, 320, 9, 23, "Abstract"],
+Cell[CellGroupData[{
+Cell[1935, 67, 236, 5, 71, "Section"],
+Cell[CellGroupData[{
+Cell[2196, 76, 501, 14, 33, "Input"],
+Cell[2700, 92, 380, 11, 47, "Output"]
+}, Open  ]],
+Cell[3095, 106, 110, 1, 29, "Text"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3242, 112, 211, 4, 71, "Section"],
+Cell[CellGroupData[{
+Cell[3478, 120, 534, 12, 31, "Input"],
+Cell[4015, 134, 441, 11, 33, "Output"]
+}, Open  ]],
+Cell[4471, 148, 201, 4, 29, "Text"],
+Cell[CellGroupData[{
+Cell[4697, 156, 493, 14, 31, "Input"],
+Cell[5193, 172, 393, 10, 33, "Output"]
+}, Open  ]],
+Cell[5601, 185, 156, 3, 29, "Text"],
+Cell[CellGroupData[{
+Cell[5782, 192, 354, 9, 31, "Input"],
+Cell[6139, 203, 2161, 41, 243, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8349, 250, 163, 3, 71, "Section"],
+Cell[CellGroupData[{
+Cell[8537, 257, 468, 12, 31, "Input"],
+Cell[9008, 271, 788, 24, 55, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

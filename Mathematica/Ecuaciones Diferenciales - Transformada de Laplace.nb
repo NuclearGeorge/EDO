@@ -1,0 +1,170 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      5289,        161]
+NotebookOptionsPosition[      4444,        129]
+NotebookOutlinePosition[      4851,        146]
+CellTagsIndexPosition[      4808,        143]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["ECUACIONES DIFERENCIALES", "Title",
+ CellChangeTimes->{{3.60021312890625*^9, 3.600213166828125*^9}}],
+
+Cell["\<\
+TRANSFORMADA DE LAPLACE CON MATHEMATICA:\
+\>", "Subtitle",
+ CellChangeTimes->{
+  3.60021317375*^9, {3.600213233453125*^9, 3.600213250015625*^9}, {
+   3.6013856768207874`*^9, 3.6013856803517437`*^9}, {3.602108356187412*^9, 
+   3.602108357162534*^9}, {3.602637636103399*^9, 3.60263764804017*^9}, {
+   3.602637679215792*^9, 3.602637679731464*^9}, {3.611947289234375*^9, 
+   3.61194730178125*^9}}],
+
+Cell["Fis. Jorge Ch\[AAcute]vez Carlos", "Author",
+ CellChangeTimes->{{3.60021435634375*^9, 3.60021435634375*^9}}],
+
+Cell["", "Institution"],
+
+Cell["\<\
+Con mathematica es posible calcular la transformada de Laplace de manera muy \
+sencilla expresi\[OAcute]n dada, usando el siguiente comando:\
+\>", "Abstract",
+ CellChangeTimes->{{3.602637658212685*^9, 3.602637699454225*^9}, {
+  3.602638021466874*^9, 3.602638043474873*^9}, {3.6119474121875*^9, 
+  3.61194745525*^9}, {3.611947817234375*^9, 3.6119478234375*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  ButtonBox["LaplaceTransform",
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/LaplaceTransform"], "[", 
+  RowBox[{
+   StyleBox["expr", "TI"], ",", 
+   StyleBox["t", "TI"], ",", 
+   StyleBox["s", "TI"]}], "]"}]], "AbstractMath",
+ CellChangeTimes->{
+  3.60021414434375*^9, {3.602637804584989*^9, 3.602637925515422*^9}, {
+   3.602637988993615*^9, 3.602638006125686*^9}, {3.602638074742005*^9, 
+   3.602638076197124*^9}, {3.602638148355539*^9, 3.602638149747198*^9}, {
+   3.611947308953125*^9, 3.611947323390625*^9}, 3.61194740234375*^9},
+ TextAlignment->Center,
+ Background->RGBColor[0.87, 0.94, 1]],
+
+Cell[CellGroupData[{
+
+Cell["Ejemplo:", "Section",
+ CellChangeTimes->{
+  3.60021434578125*^9, {3.6002143839375*^9, 3.60021438409375*^9}, {
+   3.6002145820625*^9, 3.600214582171875*^9}, {3.601165611075853*^9, 
+   3.601165611204515*^9}, {3.602639304138043*^9, 3.602639304706943*^9}},
+ TextAlignment->Left],
+
+Cell[TextData[{
+ "Dada una expresi\[OAcute]n ",
+ StyleBox["f(t)=Sin(t)", "DisplayFormula"]
+}], "Text",
+ CellChangeTimes->{{3.602638392486964*^9, 3.60263840494459*^9}, {
+  3.611947509671875*^9, 3.6119475396875*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LaplaceTransform", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", 
+    RowBox[{"a", " ", "t"}], "]"}], ",", "t", ",", "s"}], "]"}]], "Input",
+ CellChangeTimes->{{3.60021405859375*^9, 3.600214067609375*^9}, {
+  3.601165480828937*^9, 3.601165519861976*^9}, {3.602638348270786*^9, 
+  3.602638379247966*^9}, {3.602638538821679*^9, 3.60263854017652*^9}, {
+  3.61194759303125*^9, 3.6119476184375*^9}}],
+
+Cell[BoxData[
+ FractionBox["a", 
+  RowBox[{
+   SuperscriptBox["a", "2"], "+", 
+   SuperscriptBox["s", "2"]}]]], "Output",
+ CellChangeTimes->{{3.6119476138125*^9, 3.611947623421875*^9}}]
+}, Open  ]],
+
+Cell["\<\
+Si se desea calcular la transformada inversa de alguna funci\[OAcute]n F(s) \
+se usa el siguiente comando:\
+\>", "Abstract",
+ CellChangeTimes->{{3.602637658212685*^9, 3.602637699454225*^9}, {
+  3.602638021466874*^9, 3.602638043474873*^9}, {3.6119474121875*^9, 
+  3.61194745525*^9}, {3.611947752375*^9, 3.611947813453125*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  ButtonBox["InverseLaplaceTransform",
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/InverseLaplaceTransform"], "[", 
+  RowBox[{
+   StyleBox["expr", "TI"], ",", 
+   StyleBox["s", "TI"], ",", 
+   StyleBox["t", "TI"]}], "]"}]], "AbstractMath",
+ CellChangeTimes->{
+  3.60021414434375*^9, {3.602637804584989*^9, 3.602637925515422*^9}, {
+   3.602637988993615*^9, 3.602638006125686*^9}, {3.602638074742005*^9, 
+   3.602638076197124*^9}, {3.602638148355539*^9, 3.602638149747198*^9}, {
+   3.611947308953125*^9, 3.611947323390625*^9}, 3.61194740234375*^9, {
+   3.6119477339375*^9, 3.6119477451875*^9}},
+ TextAlignment->Center,
+ Background->RGBColor[0.87, 0.94, 1]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowToolbars->"EditBar",
+WindowSize->{715, 432},
+WindowMargins->{{16, Automatic}, {Automatic, 11}},
+Magnification->1.3000000715255737`,
+FrontEndVersion->"8.0 for Microsoft Windows (32-bit) (November 7, 2010)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 106, 1, 177, "Title"],
+Cell[688, 25, 403, 8, 100, "Subtitle"],
+Cell[1094, 35, 114, 1, 29, "Author"],
+Cell[1211, 38, 23, 0, 29, "Institution"],
+Cell[1237, 40, 370, 6, 50, "Abstract"],
+Cell[1610, 48, 623, 15, 49, "AbstractMath"],
+Cell[CellGroupData[{
+Cell[2258, 67, 280, 5, 91, "Section"],
+Cell[2541, 74, 214, 5, 37, "Text"],
+Cell[CellGroupData[{
+Cell[2780, 83, 412, 8, 37, "Input"],
+Cell[3195, 93, 185, 5, 54, "Output"]
+}, Open  ]],
+Cell[3395, 101, 335, 6, 29, "Abstract"],
+Cell[3733, 109, 683, 16, 49, "AbstractMath"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
